@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abi portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- <a href="Abiya Web Developer (1).pdf">download</a> -->
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 5px 8px rgb(0,0,0,.5);
+}
+.nav{
+    font-weight: 600;
+}
+.nav-link{
+    color: white !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white ;
+}
+
+    </style>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+    
+<!----home section-->
+
+<section id="home">
+  <style>
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+    #home{
+      background-color: lightblue; 
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    background-position: top;
+    background-color: rgb(36, 126, 161);
+    display: flex;
+    align-items: center;
+    color: rgb(14, 12, 12);
+    flex-direction: column;
+   top: 30%;
+  padding-top: 5%;
+    
+    }
+
+    
+
+    #home p{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    opacity: 0%;
+    animation: text 3s ease-in-out;
+    }
+
+    #home p:nth-child(1){
+    animation-delay: 3s;
+}
+
+
+@keyframes text {
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    #home p{
+        font-size: 80px;
+    }
+}
+
+
+  </style>
+
+<img src="./bg.jpg" style="height: 80%;" width="20%"  alt="">
+
+  <p class="text-center">I am a  Freelancer</p>
+  <!--- <p class="text-center">I am a Developer </p>
+  <p class="text-center">I am a  Designer</p> -->
+
+</section>
+
+
+
+
+    
+
+
+    <!-----About section-->
+
+    <section id="about">
+        <div class="circle">
+            <img src="./bg2.jpg" alt="">
+            <div class="content">
+
+              <style>
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+   
+}
+
+.circle{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(14, 8, 14);
+    border-radius: 20%;
+    position: relative !important;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+    margin-bottom: 3%;
+    margin-top: 1%;
+    transition: 1s;
+}
+
+.circle img{
+    position: absolute !important;
+    height: 300px;
+    left: 20%;
+    top: 6px;
+    transition: 1s;
+}
+
+.circle:hover{
+    width: 700px;
+    height: 500px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.circle:hover img{
+    position: absolute !important;
+    left: 30px;
+    top: 20%;
+    transition: 1s;
+}
+
+.circle:hover .content{
+    position: absolute !important;
+    top: 30%;
+    left: 40%;
+    color: white;
+    transition: 1s;
+    opacity: 1;
+    
+}
+
+
+.circle .content{
+    opacity: 0;
+}
+
+
+@media screen and (max-width:576px) {
+    .circle{
+        width: 500px;
+        height: 500px;
+        background-color: rgb(95, 43, 23);
+        border-radius: 20%;
+        position: relative;
+        box-shadow: 0px 5px 12px rgba(80, 24, 24, 0.7);
+        margin-bottom: 3%;
+        margin-top: 8%;
+        transition: 1s;
+    }
+
+    .circle:hover img{
+        position: absolute !important;
+        left: 50px;
+        top: 2%;
+        transition: 1s;
+    }
+
+    .circle:hover{
+        width: 400px;
+        height: 500px;
+      border-radius: 5px;
+      transition: 1s;
+    }
+    .circle:hover .content{
+    position: absolute !important;
+    top: 40%;
+    left: 40%;
+    color: white;
+    transition: 1s;
+    opacity: 1;
+}
+
+.circle .content{
+    opacity: 0;
+}
+
+}
+
+              </style>
+                
+                <p>
+                    <h1 style="font-size: 20px; color: azure;">ABOUT ME</h1>
+                    To Succeed in an environment of growth and excellence and earn a job which 
+provides me job Satisfaction and self-development and help me achieve personal as 
+well as organization goals.
+                     
+                </p>
+                
+                <a href="./Abiya Web Developer (1).docx">
+                <button type="button" class="btn btn-danger">Download My Resume</button></a>
+            </div>
+        </div>
+    </section>
+
+
+ <!----Skills Section-->
+
+
+ <style>
+
+#skills{
+    padding-top: 7%;
+    background-color: lightgrey;
+
+}
+
+#skills .container{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+label{
+    font-size: 20px;
+}
+
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray, -2px -2px 5px white;
+}
+
+.progress:hover{
+    box-shadow: 2px 4px 5px white, -2px -2px 5px gray;
+}
+
+
+ </style>
+
+
+ <section id="skills">
+    <h1 class="text-center">MY SKILLS</h1>
+    <div class="container">
+        <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+            <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                <label>HTML</label>
+                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 92%">92%</div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                    <label>CSS</label>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 85%">85%</div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                        <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                            <label>JAVASCRIPT</label>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%">85%</div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                                <label>TYPESCRIPT</label>
+                                <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%">85%</div>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                                        <label>REACT</label>
+                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 85%">85%</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                                            <label>ANGULAR</label>
+                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 80%">80%</div>
+                                              </div>
+                                            </div>
+</section>
+
+
+
+<!-----Project section-->
+
+<style>
+
+#project{
+    padding-top: 3%;
+    background-color: lightgreen;
+}
+
+#project .card{
+    margin-top: 1%;
+    background-color: rgb(14, 8, 14);
+    color: white;
+   text-align: center;
+    
+    
+}
+
+#project .card{
+    margin-top: 9%;
+    
+}
+
+</style>
+
+<section id="project">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <!-- <h3 class="text-center" ></h3> -->
+                <!-- <p style="text-align: center;">Projects</p> -->
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Python Fullstack Development</h5>
+                    <h6 class="card-subtitle mb-2 text-body-dark">E-commerce website</h6>
+                    <p class="card-text">Using HTML, CSS, Bootstrap</p>
+                    <button type="button" class="btn btn-light"><a href="https://abiammu77.github.io/jesusabi/" class="card-link"> Notes</a></button>
+                      <button type="button" class="btn btn-light"> <a href="https://abiammu77.github.io/E-commerce-project/" class="card-link">E-commerce</a></button>
+                    
+                  </div>
+                </div>
+                
+                
+            </div>
+         
+    
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Python Fullstack Development</h5>
+          <h6 class="card-subtitle mb-2 text-body-dark">Analog clock, Calculator</h6>
+          <p class="card-text">Using HTML, CSS, Bootstrap,Js</p>
+          <button type="button" class="btn btn-light"><a href="https://abiammu77.github.io/analog-clock-pjt/" class="card-link">Clock</a></button>
+            <button type="button" class="btn btn-light"> <a href="https://abiammu77.github.io/caculator-project/" class="card-link">Calculator</a></button>
+          
+        </div>
+      </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Python Fullstack Development</h5>
+              <h6 class="card-subtitle mb-2 text-body-dark">Guessing game, Digital clock</h6>
+              <p class="card-text">Using HTML, CSS, Bootstrap</p>
+              <button type="button" class="btn btn-light"><a href="https://abiammu77.github.io/guessing-game-project/" class="card-link">Game</a></button>
+                <button type="button" class="btn btn-light"> <a href="https://abiammu77.github.io/Digital-clock-project/" class="card-link">clock</a></button>
+              
+            </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Python Fullstack Development</h5>
+                <h6 class="card-subtitle mb-2 text-body-dark">Flipkart & GitHub API calling</h6>
+                <p class="card-text">API calling</p>
+                <button type="button" class="btn btn-light"><a href="https://abiammu77.github.io/Flipkart-API-calling-Project/" class="card-link">Flipkart</a></button>
+                  <button type="button" class="btn btn-light"> <a href="https://abiammu77.github.io/GitHub-API-calling-Project/" class="card-link">GitHub</a></button>
+                
+              </div>
+            </div>
+            </div>
+        
+    
+</div>
+    
+
+</section>
+
+<!-----Contact section-->
+
+<section id="Contact" style="background-color: black; color: white;">
+    <h1 class="text-center">Contact Us</h1>
+    <hr style="height: 60px;">
+    <h2 class="text-center" style="color: darkgoldenrod;">Register Now</h2>
+    <hr>
+    <center>
+    <form>
+        <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Enter your name"></td>
+         </tr>
+         <tr>
+            <td>Age</td>
+            <td><input type="number" placeholder=" Enter yor age"></td>
+         </tr>
+         <tr>
+            <td>Course </td>
+            <td><input type="text" placeholder="Enter your course"></td>
+         </tr>
+         <tr>
+            <td>Gender </td>
+            <td><input type="radio" name="Gender">male<input type="radio" name="Gender">female</td>
+         </tr>
+         <tr>
+            <td>Email id </td>
+            <td><input type="text" placeholder="Enter your mail"></td>
+         </tr>
+         <tr>
+            <td><input type="submit"> 
+                <td><input type="reset"></td> 
+        </tr>
+        
+         
+        </table>
+    </form>
+    <hr>
+    <p>
+        <a href="./index.html">Home</a>
+        <a href="./index.html">Register</a>
+        <a href="./index.html">Instagram</a>
+    </p>
+    <hr>
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: darkcyan;" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: darkcyan;" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg> 
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="25" width="25" style="color: darkcyan;" viewBox="-19.5036 -32.49725 169.0312 194.9835"><defs><radialGradient fy="578.088" fx="158.429" gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.399 454.004)" gradientUnits="userSpaceOnUse" xlink:href="#a" r="65" cy="578.088" cx="158.429" id="c"/><radialGradient fy="473.455" fx="147.694" gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.351 -458.493)" gradientUnits="userSpaceOnUse" xlink:href="#b" r="65" cy="473.455" cx="147.694" id="d"/><linearGradient id="b"><stop stop-color="#3771c8" offset="0"/><stop offset=".128" stop-color="#3771c8"/><stop stop-opacity="0" stop-color="#60f" offset="1"/></linearGradient><linearGradient id="a"><stop stop-color="#fd5" offset="0"/><stop stop-color="#fd5" offset=".1"/><stop stop-color="#ff543e" offset=".5"/><stop stop-color="#c837ab" offset="1"/></linearGradient></defs><path d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z" fill="url(#c)"/><path d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z" fill="url(#d)"/><path d="M65.003 17c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C17.06 50.327 17 51.964 17 65s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97a5.76 5.76 0 105.76 5.758c0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C78.616 89.645 89.65 78.613 89.65 65S78.615 40.35 65.002 40.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z" fill="#fff"/></svg>
+</center>
+
+    
+
+
+
+    
+
+</section> 
+
+       
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
